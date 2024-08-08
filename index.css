@@ -1,0 +1,113 @@
+*,::after,::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background-color: black;
+}
+
+.container-titre-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(4, 28, 136);
+}
+
+.titre-page {
+    color: rgb(207, 202, 202);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    height: auto;
+}
+
+form label {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+form input[type="text"] {
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+
+form button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease; 
+}
+
+form button:hover {
+    background-color: red;
+    color: white;
+}
+
+.block-machine {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: rgb(228, 241, 35);
+}
+
+.texte-ecrit {
+    color: rgb(59, 61, 59);
+    font-weight: 600;
+}
+
+.cursor {
+    background-color: rgb(2, 2, 22);
+    display: inline-block;
+    width: 5px;
+    margin-left: 3px;
+    animation: clignote 0.5s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes clignote {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
